@@ -1,0 +1,177 @@
+:root {
+    --main-col: #ffe6c1;
+    --secondary-col: #90bb8a;
+    --tertiary-col: #57bd60;
+    --accent-col: #ff8800;
+}
+
+* {
+    font-family: "Montserrat";
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    
+}
+
+header {
+    background-color: var(--accent-col);
+    text-align: center;
+    color: white;
+    font-size: 5rem;
+    padding: 1rem;
+}
+
+header i {
+    font-size: 4rem;
+    padding: 2rem;
+}
+
+.dark {
+    background-color: var(--secondary-col);
+}
+
+.light {
+    background-color: var(--tertiary-col);
+}
+
+#information-boxes {
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    background-color: var(--main-col);
+    height: max-content;
+}
+
+#information-boxes h1 {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+#qasx-about {
+    
+    display: flex;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    gap: 2rem;
+}
+
+#qasx-about img {
+    height: 15rem;
+}
+
+.info-box {
+    background-color: var(--main-col);
+    flex: 1;
+    padding: 2rem 2rem 0 2rem;
+}
+
+#values {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+}
+
+.value {
+    padding: 1rem;
+}
+
+.value h2 {
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+
+.value p {
+    font-size: 1rem;
+    margin: 0;
+}
+/* quotes */
+
+#quotes {
+    max-width: 100%;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    gap: 2rem;
+    margin: 1rem;
+    
+}
+
+.quote-box {
+    flex: 1;
+    display: flex;
+    gap: 0;
+    align-items: center;
+    border-radius: 1rem;
+    text-align: center;
+    gap: 1rem;
+    padding: 0.2rem 1rem;
+    
+    
+}
+
+.quote-box img {
+    width: 4rem;
+}
+.quote-text {
+    flex: 1;
+}
+
+.quote-text p {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.quote-name {
+    font-style: italic;
+    font-size: 0.6rem;
+}
+
+@media screen and (max-width: 900px) {
+    #information-boxes {
+        display: block;
+        gap: 4rem;
+        /*background-color: var(--main-col);*/
+        height: max-content;
+    }
+
+    .info-box {
+        border-bottom: 2px black solid;
+    }
+
+    #quotes {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    #homepage-smiling-man
+    {
+        display: none;
+    }
+
+    #information-boxes {
+        display: block;
+        gap: 4rem;
+        /*background-color: var(--main-col);*/
+        height: max-content;
+    }
+
+    #values {
+        grid-template-columns: 1fr;
+        margin: 2rem;
+    }
+
+    .info-box {
+        border-bottom: 2px black solid;
+    }
+
+    #quotes {
+        margin: 2rem;
+        grid-template-columns: 1fr;
+    }
+}
