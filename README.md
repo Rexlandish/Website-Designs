@@ -4,11 +4,11 @@
 ## NOVA
 https://rexlandish.github.io/Website-Designs/NOVA/
 
-## Personal Portfolio
+## 1 - Personal Portfolio
 https://rexlandish.github.io/Website-Designs/1%20-%20Personal%20Portfolio
 
-## Responsive Website
+## 2 - Responsive Website
 https://rexlandish.github.io/Website-Designs/2%20-%20Responsive%20Website/
 
-## CSS Animations
+## 3 - CSS Animations
 https://rexlandish.github.io/Website-Designs/3%20-%20CSS%20Animations
