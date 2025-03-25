@@ -4,6 +4,10 @@
         <title></title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/5f0efcdcd7.js" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
     </head>
@@ -40,7 +44,7 @@
                         problem-solving skills, and strategic thinking. By introducing chess to a wider group of people,
                         we can create a future filled with critical thinkers.
                     </p>
-                    <a class="button" href="">READ MORE</a>
+                    <a id="hero-read-more" class="button" href="">READ MORE</a>
                 </div>
             </div>
         </section>
@@ -49,11 +53,11 @@
             <h1>OUR SPONSORS</h1>
             <h2>We couldn't have done it without you!</h2>
             <div id="sponsor-list">
-                <img class="sponsor" src="images/svg-logos/logoipsum-253.svg" alt="">
-                <img class="sponsor" src="images/svg-logos/logoipsum-287.svg" alt="">
-                <img class="sponsor" src="images/svg-logos/logoipsum-351.svg" alt="">
-                <img class="sponsor" src="images/svg-logos/logoipsum-358.svg" alt="">
-                <img class="sponsor" src="images/svg-logos/logoipsum-344.svg" alt="">
+                <a class="sponsor" href="https://logoipsum.com" target="_blank"><img src="images/svg-logos/logoipsum-253.svg" alt=""></a>
+                <a class="sponsor" href="https://logoipsum.com" target="_blank"><img src="images/svg-logos/logoipsum-287.svg" alt=""></a>
+                <a class="sponsor" href="https://logoipsum.com" target="_blank"><img src="images/svg-logos/logoipsum-351.svg" alt=""></a>
+                <a class="sponsor" href="https://logoipsum.com" target="_blank"><img src="images/svg-logos/logoipsum-358.svg" alt=""></a>
+                <a class="sponsor" href="https://logoipsum.com" target="_blank"><img src="images/svg-logos/logoipsum-344.svg" alt=""></a>
             </div>
         </section>
 
@@ -62,12 +66,14 @@
                 <div id="footer-form">
                     <h1>CONTACT US</h1>
                     <h2>Send us a message</h2>
-                    <div id="footer-form-submission">
-                        <input type="text">
-                        <input type="text">
-                        <input type="text">
-                        <a class="button" href="">SUBMIT</a>
-                    </div>
+                    <form action="form-submission.php">
+                        <div id="footer-form-submission">
+                            <input id="footer-form-name" type="text" placeholder="FULL NAME" name="full-name">
+                            <input id="footer-form-email" type="text" placeholder="YOUR EMAIL" name="email">
+                            <textarea id="footer-form-message" type="textbox" placeholder="YOUR MESSAGE" name="message"></textarea>
+                            <input type="submit" name="submit" class="button" id="footer-form-submit" href="form-submission.php"></input>
+                        </div>
+                    </form>
                 </div>
 
                 <div id="footer-sitemap">

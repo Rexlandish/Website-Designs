@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    font-family: "IBM Plex Serif";
 }
 
 /* General */
@@ -62,6 +63,13 @@ header ul li{
     padding: 1rem 3rem;
     display: flex;
     align-items: center;
+    transition: background-color 0.2s;
+    cursor: pointer;
+}
+
+header ul li:hover {
+    background-color: darkgrey;
+    transition: background-color 0.2s
 }
 
 /* Hero Image */
@@ -75,7 +83,7 @@ header ul li{
 #hero-images h2
 {
     font-size: 2rem !important;
-    font-weight: 100;
+    font-weight: 400;
     margin: 0;
 }
 
@@ -84,15 +92,37 @@ header ul li{
     position: relative;
     background-color: antiquewhite;
     height: 25rem;
-    background-image: url("images/pexels-photo-7104164.jpeg");
     background-size: cover;
     background-position: center;
-    transition: background-image 1s;
+    animation: 10s ease-in-out infinite scroll-images;
+}
+
+@keyframes scroll-images {
+    0%
+    {
+        background-image: url("images/pexels-photo-7104164.jpeg");
+    }
+    25%
+    {
+        background-image: url("images/chess-4794265_1280.jpg");
+    }
+    50%
+    {
+        background-image: url("images/chess-7720877_1280.jpg");
+    }
+    75%
+    {
+        background-image: url("images/chess-2410505_1280.jpg");
+    }
+    100%
+    {
+        background-image: url("images/pexels-photo-7104164.jpeg");
+    }
 }
 
 #hero-images::before {
     content: "";
-    background-color: rgba(255, 243, 224, 0.803);
+    background-color: rgba(255, 243, 224, 0.701);
     position: absolute;
     top: 0;
     bottom: 0;
@@ -137,8 +167,6 @@ header ul li{
     
 }
 
-
-
 .button {    
     background-color: white;
     margin: 0;
@@ -148,9 +176,15 @@ header ul li{
     border: 2px solid black;
 }
 
-#hero-title-text a{
-    background-color: darkgray !important;
+#hero-title-text a {
     color: white;
+    background-color: darkgray !important;
+    transition: background-color 0.2s;
+}
+
+#hero-title-text a:hover {
+    background-color: rgb(85, 85, 85) !important;
+    transition: background-color 0.2s;
 }
 
 /* Sponsor section */
@@ -160,7 +194,7 @@ header ul li{
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 4rem;
+    padding: 2rem;
 }
 
 #sponsor-list {
@@ -172,9 +206,24 @@ header ul li{
 }
 
 .sponsor {
-    width: 10rem;
+
     border: 2px black solid;
-    padding: 2rem;
+    background-color: rgba(236, 236, 236, 0);
+    padding: 2rem 2rem;
+    transition: padding 0.2s, background-color 0.2s;
+    cursor: pointer;
+    display: flex;
+}
+
+.sponsor img {
+    width: 10rem;
+    object-fit: contain;
+}
+
+.sponsor:hover {
+    padding: 2rem 3rem;
+    background-color: rgb(255, 255, 255);
+    transition: padding 0.2s, background-color 0.2s;
 }
 
 footer {
@@ -192,26 +241,72 @@ footer #prefooter {
 /* Footer form */
 
 footer #footer-form-submission {
-    display: flex;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+    gap: 1rem;
     flex-direction: column;
+}
+
+footer #footer-form-name {
+    flex-grow: 1;
+}
+footer #footer-form-email {
+    flex-grow: 1;
+}
+footer #footer-form-message {
+    flex-grow: 5;
+    
+}
+
+footer #footer-form-submit {
+    background-color: rgb(205, 205, 205);
+    color: black;
+    transition: background-color 0.2s;
+}
+
+footer #footer-form-submit:hover {
+    background-color: rgb(227, 227, 227);
+    transition: background-color 0.2s;
 }
 
 /* Footer sitemap */
 
+footer #footer-sitemap ul {
+    list-style-position: inside;
+    margin: 1rem 0rem;
+    padding: 0;
+    
+}
+
+footer #footer-sitemap ul li {
+    padding: 0.5rem;    
+}
+
+
 footer #footer-sitemap ul a {
     text-decoration: none;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     color: black;
+    transition: color 0.08s;
 }
+
+footer #footer-sitemap ul a:hover {
+    color: rgb(245, 232, 177);
+    transition: color 0.08s;
+}
+
+
 
 /* Footer contact */
 
 footer .footer-contact {
+    display: flex;
     flex-direction: column;
+    gap: 1rem;
 }
 
 footer #footer-logo {
-    font-size: 10rem;
+    font-size: 12rem;
     margin-bottom: 1rem;
 }
 
@@ -223,7 +318,6 @@ footer .footer-contact-row {
 
 footer .footer-contact-row i {
     background-color: white;
-    height: 100%;
     border-radius: 50%;
     padding: 0.5rem;
     
