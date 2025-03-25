@@ -1,0 +1,285 @@
+/* Landing page */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-col: rgb(233, 233, 233);
+    --secondary-col: rgb(189, 189, 189);
+    --tertiary-col: rgb(109, 109, 109);
+    --quaternary-col: rgb(65, 65, 65);
+}
+
+h1, h2, h3, h4, p {
+    font-family: "Lexend", sans-serif;
+}
+
+header {
+    top: 0;
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+    background-color: var(--primary-col);
+    width: 100%;
+    position: absolute;
+    top: 0;
+}
+
+h1 {
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: 300;
+}
+
+body {
+    position: relative;
+}
+
+.page-height {
+    height: 100vh;
+    
+}
+
+#logo {
+    height: 5rem;
+}
+
+#header-links { /* skills */
+    align-items: end;
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    
+}
+
+#header-links a {
+    font-family: "Lexend";
+    font-size: 1.3rem;
+    font-weight: 400;
+    
+    text-decoration: none;
+    background-color: var(--primary-col);
+    padding: 1rem;
+    color: black;
+}
+
+#header-links a:hover {
+    background-color: var(--secondary-col);
+}
+
+#header-section {
+    top: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+
+
+#header-icons {
+    color: black;
+    display: flex;
+    gap: 1.2rem;
+}
+
+#header-icons a {
+    height: 100%;
+    color: black;   
+}
+
+#header-icons a:hover {
+    color: var(--tertiary-col);   
+}
+
+#header-icons i {
+    font-size: 2rem;
+}
+
+.link-icon {
+    font-size: 0.75em;
+    padding: 0 0.2em;
+}
+
+/* Footer */
+
+
+footer {
+    background-color: var(--secondary_col);
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+#footer-links {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    list-style: none;
+}
+
+
+#footer-links a {
+    
+    text-decoration: none;
+}
+
+#footer-links a:hover {
+    color: var(--tertiary-col);
+}
+
+
+
+#footer-links a{
+    font-family: "Lexend";
+    font-size: 1.2rem;
+    color: black;
+    padding: 1rem;
+}
+
+
+#footer-links h1:hover{
+    color: var(--secondary_col);
+}
+
+/* Body */
+
+#hero-section {
+    background-color: var(--primary_col);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+
+
+#hero-image-container {
+    background-image: url("Images/arjybeasts.gif");
+    background-size: 30rem;
+    background-position: center;
+    background-repeat: repeat;
+    margin: 0rem 1.25rem 10rem 1.25rem;
+    padding: 1rem;
+    width: 100%;
+    height: 70vh;
+    flex: 1;
+    z-index: -1;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    align-items: start;
+    
+}
+
+#hero-image-container * {
+    position: relative;
+    z-index: 2;
+}
+
+#hero-image-container::before {
+    content: "";
+    background-color: #ffffffc7;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+}
+
+/* Left side info */
+
+#hero-image-container h1 {
+    font-size: 4rem;
+    background-color: var(--tertiary-col);
+    color: white;
+    padding: 1rem;
+}
+
+#landing-box {
+    
+}
+
+.border {
+    border: 1px solid black;
+}
+
+#landing-paragraph {
+    background-color: var(--primary-col);
+    padding: 1rem;
+    padding-top: 0.5rem;
+}
+
+#landing-paragraph-text {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#landing-paragraph-text {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+#see-more-container {
+    display: flex;
+    justify-content: end;
+}
+
+#landing-paragraph a {
+    font-family: "Lexend";
+    font-weight: 300;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 1rem;
+}
+
+#landing-paragraph a:hover {
+    background-color: var(--secondary-col);
+}
+
+#landing-links {
+    display: flex;
+    justify-content: space-between;
+    flex-grow: 1;
+    gap: 0.5rem;
+}
+
+#landing-links a {
+    color: black;
+    font-family: "Lexend";
+    font-weight: 200;
+    text-decoration: none;
+    padding: 0.75rem;
+    margin: 0.5rem 0 0.5rem 0;
+    background-color: white;
+    justify-content: stretch;
+    flex-grow: 1;
+    text-align: center;
+}
+
+#landing-links a:hover {
+    background-color: var(--primary-col);
+}
+
+/* About */
+
+#about-section {
+    margin-top: 7rem;
+    padding: 1rem;
+}
