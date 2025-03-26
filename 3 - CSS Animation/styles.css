@@ -149,24 +149,19 @@ header ul li:hover {
 #hero-title {
     display: flex;
     padding: 3rem;
-    height: 30rem;
+    height: 20rem;
     justify-content: center;
     gap: 3rem;
     justify-content: space-around;
-    width: 70%;
-}
-
-#hero-title > * {
-    border: 4px solid black;
+    width: 90%;
 }
 
 #hero-title img {
+    width: 20rem;
     object-fit: contain;
-    flex-grow: 2;
 }
 
 #hero-title-text {
-    flex-grow: 1;
     display: flex;
     flex-direction: column;
     
@@ -231,6 +226,60 @@ header ul li:hover {
     transition: padding 0.2s, background-color 0.2s;
 }
 
+@media screen and (max-width: 1000px) {
+
+    header ul li{
+        list-style: none;
+        background-color: white;
+        margin: 0;
+        padding: 0.5rem 1rem;
+        display: flex;
+        align-items: center;
+        transition: background-color 0.2s;
+        cursor: pointer;
+    }
+
+
+    #hero-title {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem;
+        height: fit-content;
+        
+        gap: 0rem;
+        align-items: center;
+        width: 70%;
+    }
+
+    #hero-title img {
+        width: 30rem;
+    }
+
+    #hero-title-text {
+        display: flex;
+        align-items: center;
+    }
+
+
+    #hero-title-section {
+    
+        background-color:blanchedalmond;
+        display: flex;
+        justify-content: center;
+        
+    }
+    
+    
+
+}
+
+
+
+
+
+
+/* Footer */
+
 footer {
     background-color: rgb(206, 172, 87);
 }
@@ -254,13 +303,15 @@ footer #footer-form-submission {
 
 footer #footer-form-name {
     flex-grow: 1;
+    font-family: "IBM Plex Serif";   
 }
 footer #footer-form-email {
     flex-grow: 1;
+    font-family: "IBM Plex Serif";   
 }
 footer #footer-form-message {
     flex-grow: 5;
-    
+    font-family: "IBM Plex Serif";   
 }
 
 footer #footer-form-submit {
@@ -331,6 +382,7 @@ footer .footer-contact-row i {
     padding: 0.5rem;
     
 }
+
 
 /* Footer copyright */
 
