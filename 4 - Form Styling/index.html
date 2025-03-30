@@ -1,0 +1,123 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/5f0efcdcd7.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+
+        <i class="fa-solid fa-meteor logo"></i>
+
+        <nav>
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">DOWNLOAD</a></li>
+                <li><a href="">MERCH</a></li>
+                <li><a href="">CHARACTER IDEAS</a></li>
+            </ul>
+        </nav>
+
+        <div class="search-bar">
+            <a href=""><i class="fa-solid fa-magnifying-glass"></i></a>
+            <input type="search-bar" class="outline">
+            <a href=""><i class="fa-solid fa-circle-question"></i></a>
+            <a href=""><i class="fa-solid fa-cart-arrow-down"></i></a>
+        </div>
+
+    </header>
+
+    <section>
+        <div class="contact-box-container">
+            <div class="contact-box">
+                <h1>SEND US YOUR CHARACTER IDEAS!</h1>
+                <p>
+                    Got an idea for a new character? Tell us about them!<br>Our designers read every email, and will tell you what they think. <br> And if you're super lucky you might just see them on the big screen...
+                </p>
+                <form action="form-submission.php">
+                
+                    <div class="contact-top-row">
+                        <div class="character-lore-container">
+                            <textarea class="outline" placeholder="Tell us about your character! What's their name and backstory &lt;if they have one&gt;?" name="character-lore" id="character-lore"></textarea>
+                        </div>
+
+                        <div class="character-role-container">
+                            <h3>What role are they?</h3>
+                            <div class="character-role-selection">
+                                
+                                <div class="character-role-group">
+                                    <input type="radio" id="sv" name="character-role">
+                                    <div class="character-role">
+                                        <label for="sv">
+                                            <i class="fa-solid fa-arrows-to-eye"></i>
+                                            <span>SV</span>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <div class="character-role-group">
+                                <input type="radio" id="comp" name="character-role">
+                                    <div class="character-role">
+                                    <label for="comp">
+                                        <i class="fa-solid fa-network-wired"></i>
+                                        <span>COMP</span>
+                                    </label>
+                                        
+                                    </div>
+                                </div>
+
+                                <div class="character-role-group">
+                                    <input type="radio" id="aide" name="character-role">
+                                    <div class="character-role">
+                                        <label for="aide">
+                                            <i class="fa-solid fa-chart-line"></i>
+                                            <span>AIDE</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                        
+        
+                        <br><br>
+                    
+                    <div class="ability-descriptions">
+
+                        <div class="ability-description outline">
+                            <input placeholder="Ability 1 Name" name="ability-one" id="ability-one" type="text"></input>
+                            <textarea placeholder="Ability 1 Description" name="ability-one-about" id="ability-one-about"></textarea>
+                        </div>
+                        
+                        <div class="ability-description outline">
+                            <input placeholder="Ability 2 Name" name="ability-two" id="ability-two" type="text"></input>
+                            <textarea placeholder="Ability 2 Description" name="ability-two-about" id="ability-two-about"></textarea>
+                        </div>
+                        
+                        <div class="ability-description outline">
+                            <input placeholder="Ability 3 Name" name="ability-three" id="ability-three" type="text"></input>
+                            <textarea placeholder="Ability 3 Description" name="ability-three-about" id="ability-three-about"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="character-info-section">
+                        <textarea class="outline" placeholder="Anything else we should know about them?" name="character-info" id="character-info"></textarea>
+                    </div>
+
+                    <div class="submit-button">
+                        <input id="submit-button-container" type="submit" value="SEND"> 
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>

@@ -1,0 +1,354 @@
+:root {
+
+    --color-1: #DBD7E4ff;
+    --color-2: #EC9395ff;
+    --color-3: #D5686Bff;
+    --color-4: #84647f;
+    --color-5: #402e4c;
+    --color-6: #353034ff;
+    --color-7: #242424ff;
+}
+
+header {
+    backdrop-filter: blur(20px);
+    background: #65656d84;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px white solid;
+}
+
+header * {
+}
+
+header .logo {
+    font-size: 4rem !important;
+}
+
+header i {
+    font-size: 2rem;
+}
+
+.search-bar a i{
+    font-size: 2rem;
+    color: #000;
+}
+
+header nav {
+    height: 100%;
+}
+
+header ul {
+    
+    list-style: none;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header li {
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+header li a {
+    text-decoration: none;
+    padding: 1rem;
+    color: white;
+}
+
+header li:hover {
+    background-color: #EC939544;
+}
+
+
+header .search-bar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+}
+
+header .search-bar a i:hover {
+    color: var(--color-3);
+}
+
+header .search-bar input{
+    height: 75%;
+    border-radius: 0.5rem;
+}
+
+body {
+
+    padding: 0;
+    margin: 0;
+
+    background: repeating-linear-gradient(
+        45deg,
+        var(--color-7),
+        var(--color-7) 5%,
+        var(--color-6) 5%,
+        var(--color-6) 10%
+        );
+
+    background-position: 0% 0%;
+    background-size: 200vw 200vh;
+    font-family: "Electrolize";
+    animation: background-scroll 10s infinite linear;
+}
+
+@keyframes background-scroll {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 0%;
+    }
+}
+
+.contact-box-container {
+    margin: 7rem 0;
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-1);
+    
+}
+
+form {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.contact-box {
+    
+    background-color: #65656d84;
+    backdrop-filter: blur(1rem);
+    border: 1px solid rgba(255, 255, 255, 0.304);
+    border-radius: 1rem;
+    padding: 2rem;
+    width: min(45rem, 60%);
+    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.43);
+}
+
+.contact-box h1 {
+    font-size: 3rem;
+}
+
+.contact-box p {
+    font-size: 1.2rem;
+}
+
+.contact-top-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    height: 10rem;
+}
+
+.contact-top-row textarea {
+    border-radius: 1rem;
+    padding: 1rem;
+    
+    width: 100%;
+}
+
+.character-lore-container {
+    width: 100%;
+    
+}
+
+.character-name {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.character-role-container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+
+.character-role-selection {
+    border-radius: 1rem;
+    background-color: #69656d33;
+    border: 2px solid #69656dff;
+    color: var(--color-1);
+    /* overflow: hidden; */
+    display: flex;    
+}
+
+.character-role-group {
+    width: 6rem;
+    height: 6rem;
+    position: relative;
+    /* box-shadow: 0px 0px 10px inset var(--color-4); */
+    
+    }
+
+.character-role-group input {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.character-role-group input:hover + .character-role {    
+    background-color: var(--color-2);
+    box-shadow: 0px 0px 10px var(--color-2);
+}
+
+.character-role-group input:checked + .character-role {    
+    background-color: var(--color-3);
+    box-shadow: 0px 0px 10px var(--color-3);
+    transition: background-color 0.3s;
+}
+
+
+.character-role label {
+    position: absolute;
+    font-weight: 800;
+    font-size: 2rem;
+    top: 50%;
+    left: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.character-role {
+    width: 100%;
+    height: 100%;
+}
+
+.character-role i {
+    font-size: 3.75rem;    
+    color: rgb(255, 255, 255, 0.2)
+}
+
+.character-role span {
+    position: absolute;
+    font-size: 1.8rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff55;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea {
+    outline: none;
+    color: white;
+    font-size: 1.2rem;
+    border: none;
+    font-family: "Electrolize";
+    background-color: #69656d33;
+}
+
+.contact-top-one {
+    display: flex;
+    justify-content: space-around;
+}
+
+.ability-descriptions {
+    display: flex;
+    justify-content: space-evenly;
+    height: 10rem;
+    gap: 1rem;    
+}
+
+.outline {
+    border: 2px var(--color-1) solid;
+}
+
+.ability-description {
+    overflow: hidden;
+    display: flex;
+    
+    border-radius: 1rem;
+    flex-grow: 1;
+    flex-direction: column;
+}
+
+.ability-description input {
+    font-weight: 800;
+    border-bottom: 1px var(--color-1) solid;
+    padding: 0.5rem;
+}
+
+input:focus,
+textarea:focus {
+    background-color: #db8c8c3b;
+}
+
+.ability-description textarea {
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.ability-name {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-box textarea{
+    height: 100%;
+    width: 100%;
+}
+
+.character-info-section {
+    margin: 3rem 0;
+}
+
+.character-info-section textarea {
+    border-radius: 1.2rem;
+    padding: 0.5rem;
+    height: 5rem;
+}
+
+
+.submit-button {
+    width: 100%;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.submit-button input{
+
+    padding: 1rem 5rem;
+    background-color: #db8c8c3b;
+    border: 2px solid #db8c8cff;
+    border-radius: 1rem;
+}
+
+.submit-button input:hover {
+    cursor: pointer;
+    background-color: #db8c8cff;
+}
