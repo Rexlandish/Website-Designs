@@ -13,5 +13,8 @@ https://rexlandish.github.io/Website-Designs/2%20-%20Responsive%20Website
 ## 3 - CSS Animations
 https://rexlandish.github.io/Website-Designs/3%20-%20CSS%20Animation
 
+## 5 - Form Styling
+https://rexlandish.github.io/Website-Designs/4%20-%20Form%20Styling
+
 ## 5 - Grid Layout
 https://rexlandish.github.io/Website-Designs/5%20-%20Flexbox%20Grid%20Layout
