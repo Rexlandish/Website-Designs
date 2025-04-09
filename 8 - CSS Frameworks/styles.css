@@ -1,0 +1,59 @@
+p {
+    font-size: 1.5rem;
+}
+
+.jumbotron {
+    margin-top: 3rem;
+}
+
+.quote {
+    padding: 2rem;
+    padding-bottom: 3rem;
+    position: relative;
+}
+
+.quote p {
+    font-size: 2rem;
+}
+
+.quote .quote-signature {
+    font-style: italic;
+    float: right;
+    font-size: 1.25rem;
+    color: #ffffff88;
+}
+
+.quotes {
+    height: 30rem;
+    overflow-y: scroll;
+}
+
+.quote {
+    background-color: var(--bs-primary);
+    color: var(--bs-light);
+    margin: 1rem 0;
+}
+
+.quote p {
+    padding: 0.5rem;
+    font-size: 1.5rem;
+}
+
+input[type="text"],
+textarea[type="text"] {
+    font-size: 1.5rem;
+}
+
+textarea {
+    resize: none;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+}
+
+.mindfulness-card img {
+    height: 15rem;
+    object-fit: cover;
+}
