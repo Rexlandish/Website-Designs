@@ -1,0 +1,390 @@
+body {
+    margin: 0;
+    background-color: rgb(15, 15, 15);
+}
+
+p {
+    margin: 0;
+}
+
+.content-split {
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    width: 100vw;
+}
+
+.video-column {
+}
+
+.video-column-container {
+    margin: 2rem;
+}
+
+.video-column iframe {
+    width: 100%;
+    aspect-ratio: 16/9;
+}
+h1 {
+    color: white;
+    margin: 0.75rem 0;
+}
+
+.user-interaction-row {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 50px;
+}
+
+/* Channel details */
+
+.channel-details {
+    
+    display: flex;
+    gap: 0.5rem;
+    height: 2.5rem;
+}
+
+.channel-logo {
+    height: 100%;
+    width: auto;
+    border-radius: 50%;
+}
+
+.channel-stats {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.channel-stats * {
+    margin: 0;
+}
+
+.channel-name {
+    text-decoration: none;
+    border: none;
+}
+
+.bold-text {
+    color: white;
+    font-weight: bold;
+}
+
+.small-text {
+    color: grey;
+}
+
+.join-button {
+    margin-left: 1rem;
+    cursor: pointer;
+}
+
+.subscribe-button {
+    cursor: pointer;
+}
+
+.channel-details button {
+    padding: 0 1rem;
+    background-color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.channel-details button:hover {
+    background-color: rgba(255, 255, 255, 0.811);
+}
+
+.user-engagement {
+    display: flex;
+    gap: 0.5rem;
+    position: absolute;
+    color: white;
+    right: 0;
+    top: 50%;
+    transform: translate(0, -50%);
+    height: max-content;
+}
+
+.like-dislike {
+    display: flex;
+    gap: 0;
+}
+
+
+
+.like-dislike button {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.engagement-button {
+    background-color: rgba(236, 236, 236, 0.093);
+    color: white;
+    padding: 0.7rem;
+    border: none;
+}
+
+.engagement-button:hover {
+    background-color: rgba(236, 236, 236, 0.171);
+    cursor: pointer;
+}
+
+.engagement-button i {
+    font-size: 1.2rem;
+}
+
+.like-button {
+    padding: 0 1.25rem;
+    border-top-left-radius: 100px; 
+    border-bottom-left-radius: 100px;
+    border-right: 1px rgba(255, 255, 255, 0.179) solid;
+}
+
+.dislike-button {
+    padding: 0 1.25rem;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.share-button {
+    border-radius: 100px;
+}
+
+.expand-button {
+    border-radius: 100px;
+}
+
+hr {
+    border-color: rgba(255, 255, 255, 0.277);
+}
+
+/* Video description */
+
+.video-description {
+    color: white;
+    background-color: rgba(255, 255, 255, 0.153);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.video-description p {
+    padding: 0;
+    margin: 0;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.25rem;
+}
+
+.comment-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    height: max-content;
+    margin: 1.5rem 0;
+}
+
+.sort-by button {
+    display: flex;
+    color: white;
+    background: none;
+    border: none;
+}
+
+.sort-by button {
+    cursor: pointer;
+}
+
+/* Comments */
+
+.comments-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.comment {
+    display: flex;
+    gap: 1rem;
+}
+
+.comment-profile-picture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+
+.comment-title-date a {
+    text-decoration: none;
+    color: white;
+}
+
+.comment-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.comment-text {
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.comment-like-dislike {
+    display: flex;
+    gap: 1rem;
+}
+
+.comment-like-dislike i {
+    font-size: 1.2rem;
+}
+
+.comment-like, .comment-dislike {
+    background: none;
+    border: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.35rem;
+}
+
+.comment-interaction {
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+
+/* submit comment */
+
+.submit-comment {
+    background-image: red;
+    width: 100%;
+    display: flex;
+    gap: 1rem;
+    margin: 3rem 0;
+}
+
+.submit-comment input {
+    background-color: #00000000;
+    border: none;
+    border-bottom: 1px rgba(255, 255, 255, 0.519) solid;
+    outline: none;
+    color: white;
+}
+
+.submit-comment input::placeholder {
+    font-size: 1rem;
+}
+
+.comment-input {
+    width: 100%;
+    height: 50%;
+}
+
+/* Recommendations */
+
+a {
+    text-decoration: none;
+}
+
+.recommendation-column {
+    padding: 1rem;
+    padding-top: 2rem;
+}
+
+
+.video-recommendation {
+    display: flex;
+    height: max-content;
+    gap: 0.5rem;
+    padding: 0.3rem;
+    position: relative;
+    width: 100%;
+}
+
+.video-rec-thumbnail-container {
+    width: 200px;
+    display: flex;
+    position: relative;
+    height: max-content;
+}
+
+.video-rec-thumbnail {
+    aspect-ratio: 16/9;
+    border-radius: 10px;
+    object-fit: contain;
+    object-position: center;
+    z-index: 1;
+    width: 100%;
+}
+
+.video-rec-duration {
+    background-color: rgba(0, 0, 0, 0.892);
+    border-radius: 3px;
+    padding: 0.2rem;
+    position: absolute;
+    color: white;
+    bottom: 5px;
+    right: 5px;
+    z-index: 2;
+}
+
+.video-rec-information {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+h5 {
+    margin: 0rem;
+}
+
+h6 {
+    margin: 0rem;
+}
+
+h5 {
+    font-size: medium;
+}
+
+.video-rec-more-options {
+    cursor: pointer;
+    font-size: larger;
+    color: white;
+    z-index: 3;
+}
+
+@media screen and (max-width: 1800px)
+{
+    .content-split {
+        grid-template-columns: 1fr 400px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .comment-section {
+        display: none;
+    }
+
+    .content-split {
+        grid-template-columns: 1fr;
+    }
+
+    .video-rec-information {
+        flex-grow: 1;
+        width: 100%;
+    }
+}
