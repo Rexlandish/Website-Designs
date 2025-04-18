@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 1rem;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin: 0.5rem;
+}
+
+.landing {
+    display: flex;
+    height: max-content;
+    justify-content: space-around;
+    background-color: rgb(223, 241, 251);
+}
+
+.landing-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-grow: 1;
+    text-align: center;
+    padding: 2rem;
+    
+}
+
+.landing-text button {
+    width: 10rem;
+}
+
+.landing-image {
+    width: 20rem;
+    object-fit: cover;
+}
+
+.activity-cards {
+    width: 95%;
+    display: grid;
+    margin: auto;
+    gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.activity-cards figure {
+    background-color: rgb(222, 222, 222);
+    margin: 0;
+}
+
+.activity-cards figure figcaption {
+    padding: 1rem;
+}
+
+.activity-cards h3 {
+    font-size: 1.5rem;
+    margin: 1rem;
+    margin-bottom: 0;
+}
+
+.activity-cards h4 {
+    color: grey;
+    font-weight: normal;
+    margin: 0;
+    margin-bottom: 2rem;
+}
+
+.activity-cards figure img {
+    aspect-ratio: 3/2;
+    width: 100%;
+    object-fit: cover;
+}
+
+.activities {
+    padding: 1rem;
+    text-align: center;
+    background-color: rgb(248, 255, 249);
+}
+
+.activity-header {
+    padding: 1rem;
+}
+
+.activities-footer {
+    padding: 2rem;
+}
+
+/* ceo section */
+
+.ceo-goal-container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.ceo-section {
+    padding: 2rem;
+    display: flex;
+    background-color: rgb(233, 254, 255);
+}
+
+.ceo-section h2 {
+    margin-top: 3rem;
+}
+
+.ceo-section h3 {
+    margin-bottom: 0;
+}
+
+.ceo-section p {
+    margin: 0;
+}
+
+.ceo-text {
+    text-align: center;
+    padding: 2rem;
+}
+
+.ceo-image {
+    aspect-ratio: 1;
+    height: 20rem;
+    object-fit: cover;
+    align-self: center;
+}
+
+
+@media screen and (max-width: 800px) {
+    .activity-cards {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    
+    .ceo-section {
+        display: block;
+    }
+
+    .ceo-image-container {
+        display: flex;
+        justify-content: center;
+    }
+
+}
