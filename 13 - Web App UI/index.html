@@ -1,0 +1,168 @@
+<!DOCTYPE html5>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game</title>
+    <script src="https://kit.fontawesome.com/5f0efcdcd7.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="right-section">
+        
+        <div class="location">
+            <h1>@ THE HOUSE AT THE END OF TIME</h1>
+        </div>
+
+        <div class="stat-section">
+            
+            <div class="character-details">
+                <div class="character">
+                    <div class="character-title">
+                        <h2>Charles McKenzie</h2>
+                        <h3>Unabashed Intern</h3>
+                        <h3>HP 200/200</h3>
+                    </div>
+                    <table class="character-stats">
+                        <tr>
+                            <th>ATTACK</th>
+                            <td>x2.5</td>
+                        </tr>
+                        <tr>
+                            <th>DEFENCE</th>
+                            <td>x1.1</td>
+                        </tr>
+                        <tr>
+                            <th>SPECIAL</th>
+                            <td>x3.2</td>
+                        </tr>
+                    </table>
+    
+                </div>
+                <div class="character">
+                    
+                    <div class="character-title">
+                        <h2>Hedgehog Spencer</h2>
+                        <h3>(Alledged) Master of Time</h3>
+                        <h3>HP 500/550</h3>
+                    </div>
+                    <table class="character-stats">
+                        <tr>
+                            <th>ATTACK</th>
+                            <td>x1.0</td>
+                        </tr>
+                        <tr>
+                            <th>DEFENCE</th>
+                            <td>x1.0</td>
+                        </tr>
+                        <tr>
+                            <th>SPECIAL</th>
+                            <td>x5.0</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="dialogue-section">
+            <div class="dialogue">
+                <p class="p1-dialogue">
+                    "Who are you?"
+                </p>
+                <p class="p2-dialogue">
+                    "I'm Hedgehog Spencer."<br>
+                    <i class="faded-text">Hedgehog Spencer used <b>(spec) MEMORY WIPE</b></i><br>
+                    "Who are you and how did you get here?"
+                </p>
+                <p class="p1-dialogue">
+                    "I came to... umm..."<br>
+                </p>
+                <p class="p2-dialogue">
+                    <i class="faded-text">Hedgehog Spencer used <b>(def) HISTORY BARRIER</b></i><br>
+                    "Take a seat. Let's have a talk."<br>
+                </p>
+                <i class="select-action-prompt faded-text">Please select an action from the interaction tab.</i>
+            </div>
+        </div>
+    </div>
+    <div class="interaction-tab">
+        <div class="action-button-container">
+            <h1>ACTION</h1>
+                <div class="attack-buttons action-column">
+                    <h2>ATTACK</h2>
+                    <div class="action-buttons">
+                        <button class="unlocked"><i class="fa-solid fa-dog"></i></button>
+                        <button class="locked"><i class="fa-solid fa-xmark"></i></i></button>
+                        <button class="locked"><i class="fa-solid fa-xmark"></i></i></button>
+                        <button class="locked"><i class="fa-solid fa-xmark"></i></i></button>
+                    </div>
+                </div>
+                <div class="defense-buttons action-column">
+                    <h2>DEFENSE</h2>
+                    <div class="action-buttons">
+                        <button class="unlocked"><i class="fa-solid fa-compress"></i></button>
+                        <button class="unlocked"><i class="fa-solid fa-microphone-slash"></i></button>
+                        <button class="locked"><i class="fa-solid fa-xmark"></i></i></button>
+                        <button class="locked"><i class="fa-solid fa-xmark"></i></i></button>
+                        
+                    </div>
+                </div>
+                <div class="special-buttons action-column">
+                    <h2>SPECIAL</h2>
+                    <div class="action-buttons">
+                        <button class="unlocked"><i class="fa-solid fa-shuffle"></i></button>
+                        <button class="unlocked"><i class="fa-solid fa-tornado"></i></button>
+                        <button class="unlocked"><i class="fa-solid fa-clock-rotate-left"></i></button>
+                        <button class="unlocked"><i class="fa-solid fa-forward-fast"></i></button>
+                    </div>
+                </div>
+        </div>
+        <div class="item-container">
+            <h1>ITEMS</h1>
+            <div class="item-grid">
+                <a class="item">
+                    <i class="fa-solid fa-carrot"></i></i><h4>Carrot</h4>
+                </a>
+                <a class="item">
+                    <i class="fa-solid fa-dice"></i><h4>Dice</h4>
+                </a>
+                <a class="item">
+                    <i class="fa-solid fa-bell"></i></i><h4>Bell</h4>
+                </a>
+                <a class="item">
+                    <i class="fa-solid fa-toilet-paper"></i><h4>Toilet Paper</h4>
+                </a>
+                <a class="item">
+                    <i class="fa-solid fa-map"></i><h4>Map</h4>
+                </a>
+            </div>
+        </div>
+        <div class="talk-container">
+            <h1>TALK</h1>
+            <div class="contacts">
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Sarah A.</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Melody Rocquefort</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Mimi @ QASX</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Sarah Z.</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Emma M. A.</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Me</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Simon Simone</button>
+                <button><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;Elephant Finder</button>
+                <button disabled><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;---</button>
+                <button disabled><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;---</button>
+                <button disabled><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;---</button>
+                <button disabled><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;---</button>
+                <button disabled><i class="fa-solid fa-phone"></i>&nbsp;&nbsp;---</button>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
