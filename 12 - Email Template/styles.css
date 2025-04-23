@@ -1,0 +1,169 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: "Chelsea Market", sans-serif;
+}
+
+h1, h2, h3, p {
+    margin: 0;
+}
+
+.container {
+    background-color: rgb(255, 195, 56);
+    resize: horizontal;
+    overflow: auto;
+    border: 1px solid black;
+    max-width: 800px;
+    min-width: 400px;
+    container-type: inline-size;
+}
+
+.header {
+    background-image: url("images/pexels-photo-671956.webp");
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.header::before {
+    content: "";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255, 166, 0, 0.658);
+    position: absolute;
+    z-index: -1;
+}
+
+h1 {
+    padding: 2rem;
+    font-size: 4rem;
+    text-align: center;
+    z-index: 2;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+.hero-image {
+    width: 100%;
+    height: 10rem;
+    object-fit: cover;
+    object-position: top;
+}
+
+.newest-arrivals {
+    background-color: beige;
+    padding: 1rem;
+}
+
+.newest-arrivals-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1.5rem 2rem;
+}
+
+.food-item {
+    width: 100%;
+    height: max-content;
+}
+
+.food-item img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.food-item button {
+    font-family: "Chelsea Market";
+    background: none;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    margin: 0.5rem 0;
+}
+
+.food-information {
+    margin-top: 1rem;
+    text-align: left;
+}
+
+.discount-offer {
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+    padding: 3rem;
+    margin: 2rem;
+    border-radius: 2rem;
+}
+
+.discount-offer i {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.discount-offer h4 {
+    margin: 0;
+}
+
+.discount-symbols {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer {
+    background-color: rgb(173, 98, 0);
+    padding: 1rem;
+    color: white;
+}
+
+footer a {
+    color: white;
+}
+
+footer .social-links {
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+    gap: 1rem;
+    font-size: 2rem;
+}
+
+@container (max-width: 600px) {
+    
+    .newest-arrivals-grid    {        
+        grid-template-columns: 1fr;
+    }
+
+    .food-item img {
+        aspect-ratio: 4/1;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 0.75rem;
+    }
+
+    .food-item button {
+        padding: 0.4rem;
+        border-radius: 1rem;
+        font-size: 0.75rem;
+    }
+
+        
+    .discount-offer {
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+
+}
